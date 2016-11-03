@@ -1,12 +1,12 @@
-package { 'apache2':
+package { 'httpd':
     ensure => installed,
     
 }
 
-service { "apache2":
+service { "httpd":
     ensure     => running,
     enable     => true,
     hasrestart => true,
     hasstatus  => true,
-    # pattern    => 'apache2',
+    # pattern    => 'httpd',
 }
