@@ -1,1 +1,5 @@
-notify { 'Rajasekhar is busy for today': } 
+notify { 'Rajasekhar is busy ': } 
+package { 'httpd':
+    ensure => installed,
+    
+}
